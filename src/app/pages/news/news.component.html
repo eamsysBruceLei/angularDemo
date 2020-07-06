@@ -1,0 +1,17 @@
+<p>news works!</p>
+<ul>
+
+    <li>{{username}}</li>
+    <li>{{age}}</li>
+    用户名：<input type="text" [(ngModel)]="username" /><br>
+    年龄：<input type="text" [(ngModel)]="age" /><br>
+    <button (click)="submit(username,age)">提交</button>
+</ul>
+用户列表
+<table>
+    <tr *ngFor="let person of persons;let key= index;">
+        <td>{{key}}</td>
+        <td>{{person.username}}</td>
+        <td>{{person.age}}</td>
+    </tr>
+</table>
